@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeSanti</title>
+
+    <style>
+    /* Estilo para el botón */
+    .linea {
+        margin: 0px 0;
+    }
+
+    .button {
+        background-color: #19a4df; /* Color de fondo verde */
+        border: none; /* Sin borde */
+        color: white; /* Texto blanco */
+        padding: 15px 32px; /* Espacio alrededor del texto */
+        text-align: center; /* Centrar el texto */
+        text-decoration: none; /* Sin subrayado */
+        display: inline-block; /* Formato de bloque en línea */
+        font-size: 15px; /* Tamaño de fuente */
+        margin: 4px 2px; /* Espacio alrededor del botón */
+        cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+        transition-duration: 0.4s; /* Duración de la transición */
+        border-radius: 100px;
+    }
+
+    /* Cambiar a color rojo al pasar el mouse */
+    .button:hover {
+        background-color: #365ff4;
+        color: white;
+    }
+    body {
+            background-color: #ffffff;
+            margin: 40px;
+        }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+            /* Estilo para el párrafo */
+    .margen {
+        margin: 100px;
+    }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2 style="color: #19a4df">Santi<em>Spot</em></h2>
+        <div>
+            <button class="button" onclick="cambiarPagina('index.html')">Inicio</button>
+            <button class="button" onclick="cambiarPagina('Odio.html')";>SantiMensaje</button>
+            <button class="button" onclick="cambiarPagina('SantiNews.html')">SantiNews</button>
+        </div>
+    </div>
+    <br>
+    <hr class="linea">
+
+    <b style="text-align: center;"> Aquí se publica diariamente donde se ha visto a santi y la hora en que fue visto.
+    </b>
+
+    <hr class="linea">
+    <p>Jueves 23 Nov 2023, 11:37am<br>Este día Santi fue visto en cafeteria<br>(Foto por Juanfer)</p>
+ <img style="width: 100px;"src="spotfotos/SANTISPOT1.jpeg">
+
+    <hr class="linea">
+
+    <h4 style="text-align: center">By Peperatta</h4><p>version 0.0</p>
+
+    <script>
+        function cambiarPagina(url) {
+            window.location.href = url;
+        }
+    </script>
+
+</body>
+</html>

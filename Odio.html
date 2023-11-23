@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OdioSanti</title>
+</head>
+    <style>
+    body {
+            background-color: #ffffff;
+            margin: 40px;
+        }
+    .button {
+        background-color: #19a4df; /* Color de fondo verde */
+        border: none; /* Sin borde */
+        color: white; /* Texto blanco */
+        padding: 15px 32px; /* Espacio alrededor del texto */
+        text-align: center; /* Centrar el texto */
+        text-decoration: none; /* Sin subrayado */
+        display: inline-block; /* Formato de bloque en línea */
+        font-size: 15px; /* Tamaño de fuente */
+        margin: 4px 2px; /* Espacio alrededor del botón */
+        cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+        transition-duration: 0.4s; /* Duración de la transición */
+        border-radius: 100px;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    </style>
+
+
+<body>
+    <div class="container">
+        <h2 style="color: #19a4df">Santi<em>Mensajes</em></h2>
+        <div>
+            <button class="button" onclick="cambiarPagina('index.html')";>Inicio</button>
+            <button class="button" onclick="cambiarPagina('SantiNews.html')">SantiNews</button>
+            <button class="button" onclick="cambiarPagina('SantiSpot.html')">SantiSpots</button>
+        </div>
+    </div>
+    <br>
+    <hr class="linea">
+
+    <h2 style="color:#19a4df";>Aquí puedes dar tus comentarios sobre Santi</h2>
+    <hr class="linea">
+
+    <b style="text-align: center;"> Diariamente se publicará el mensaje favorito de los desarrolladores.
+    </b>
+
+    <hr class="linea">
+    <form>
+
+        Ingresa tus comentarios sobre santi:<br />
+        <textarea id="odio" name="odio" rows="2" cols="100"></textarea>
+        
+         
+        <button >Enviar</button>
+    </form>
+    
+    <p>
+        *Ejemplo:<br> "La utlima skin de santi (Camiseta de jugadores de basketball), no es <br> tan buena como la skin de jersey de americano, me gustaría que en su <br> siguiente semestre vuelva a sus antiguas skins. Pero igual me gustan <br> mucho los días que lleva puesta su hoodie de borregos, es un clasico".</br>
+    </p>
+
+    <h4 style="text-align: center">By Peperatta</h4><p>version 0.0</p>
+
+    <script>
+        function cambiarPagina(url) {
+            window.location.href = url;
+        }
+    </script>
+
+</body>
+</html>
